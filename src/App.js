@@ -6,17 +6,19 @@ class App extends Component {
     this.state = { displayBio: false };
     // console.log("Component more this", this);
 
-    this.readMore = this.readMore.bind(this);
-    this.readLess = this.readLess.bind(this);
+    this.toggle = this.toggle.bind(this);
   }
 
-  readMore() {
-    // console.log("your button was clicked");
-    this.setState({ displayBio: true });
-  }
-  readLess() {
-    // console.log("your button was clicked");
-    this.setState({ displayBio: false });
+  // readMore() {
+  //   // console.log("your button was clicked");
+  //   this.setState({ displayBio: true });
+  // }
+  // readLess() {
+  //   // console.log("your button was clicked");
+  //   this.setState({ displayBio: false });
+  // }
+  toggle() {
+    this.setState({ displayBio: !this.state.displayBio });
   }
 
   render() {
@@ -32,11 +34,11 @@ class App extends Component {
         </ol>
         <p>I also enjoy Swimming, WaterPolo, Rock Climbing, and Traveling!</p>
 
-        <button onClick={this.readLess}>Read Less</button>
+        <button onClick={this.toggle}>Read Less</button>
       </div>
     ) : (
       <div>
-        <button onClick={this.readMore}>Read More</button>
+        <button onClick={this.toggle}>Read More</button>
       </div>
     );
 
