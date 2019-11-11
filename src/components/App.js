@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import Projects from "./Projects";
+import Jokes from "./Jokes"
 import SocialProfiles from "./SocialMedia";
+import Projects from "./Projects";
 import profilePic from "../assets/profile.png";
 import Title from './Title'
 
@@ -62,6 +63,8 @@ class App extends Component {
 
         <hr />
         <SocialProfiles />
+        <hr />
+        <Jokes />
       </div>
     );
   }
