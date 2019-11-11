@@ -1,26 +1,14 @@
 import React, { Component } from "react";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = { displayBio: false };
-    // console.log("Component more this", this);
+  state = { displayBio: false };
 
-    this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-  }
-
-  // readMore() {
-  //   // console.log("your button was clicked");
-  //   this.setState({ displayBio: true });
-  // }
-  // readLess() {
-  //   // console.log("your button was clicked");
-  //   this.setState({ displayBio: false });
-  // }
-  toggleDisplayBio() {
+  // This gets auto added as a property
+  toggleDisplayBio = () => {
     this.setState({ displayBio: !this.state.displayBio });
-  }
+  };
 
+  // This is by default bound to this component so the normal method syntax is fine
   render() {
     // turnary operator makes this a constant instead of a variable (noted by let)
     const bio = this.state.displayBio ? (
