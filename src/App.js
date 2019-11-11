@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialMedia";
+import profilePic from "./assets/profile.png";
 
 class App extends Component {
   state = { displayBio: false };
@@ -39,6 +40,12 @@ class App extends Component {
 
     return (
       <div>
+        <img
+          src={profilePic}
+          alt="profile-pic"
+          className="profile"
+          // style={{ width: 400, height: 400 }}
+        />
         <h1>Hello!</h1>
         <p>My name is Kevin, I am a software engineer.</p>
         <p>
