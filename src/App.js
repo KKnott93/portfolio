@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialMedia";
 import profilePic from "./assets/profile.png";
+import Title from './Title'
 
 class App extends Component {
   state = { displayBio: false };
@@ -28,10 +29,10 @@ class App extends Component {
         <button onClick={this.toggleDisplayBio}>Read Less</button>
       </div>
     ) : (
-      <div>
-        <button onClick={this.toggleDisplayBio}>Read More</button>
-      </div>
-    );
+        <div>
+          <button onClick={this.toggleDisplayBio}>Read More</button>
+        </div>
+      );
 
     // Basic if check for bio state
     // if (!this.state.displayBio) {
@@ -44,10 +45,11 @@ class App extends Component {
           src={profilePic}
           alt="profile-pic"
           className="profile"
-          // style={{ width: 400, height: 400 }}
+        // style={{ width: 400, height: 400 }}
         />
         <h1>Hello!</h1>
-        <p>My name is Kevin, I am a software engineer.</p>
+        <p>My name is Kevin.</p>
+        <Title />
         <p>
           I am creating a React App to help build my portfolio and learn even
           more!
