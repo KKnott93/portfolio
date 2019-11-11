@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Projects from "./Projects";
 
 class App extends Component {
   state = { displayBio: false };
@@ -46,6 +47,8 @@ class App extends Component {
 
         {/* You can add code within {} */}
         {bio}
+        <hr />
+        <Projects />
       </div>
     );
   }
