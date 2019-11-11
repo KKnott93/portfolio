@@ -4,6 +4,7 @@ import project3 from "../assets/project3.png";
 
 const PROJECTS = [
   {
+    id: 1,
     title: "Simple React Application",
     description: "A React App that I have built, involving JS and core MVC!",
     link: "https://github.com/KKnott93/portfolio",
@@ -11,6 +12,7 @@ const PROJECTS = [
   },
 
   {
+    id: 2,
     title: "Self-made API ",
     description:
       "A restful API that I have built from scratch to GET/POST information!",
@@ -19,6 +21,7 @@ const PROJECTS = [
   },
 
   {
+    id: 3,
     title: "Operating System Final Project",
     description: "The final project for Texas Tech Operating System course!",
     link: "https://github.com/KKnott93/",
