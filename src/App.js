@@ -6,7 +6,7 @@ class App extends Component {
     this.state = { displayBio: false };
     // console.log("Component more this", this);
 
-    this.toggle = this.toggle.bind(this);
+    this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
   }
 
   // readMore() {
@@ -17,7 +17,7 @@ class App extends Component {
   //   // console.log("your button was clicked");
   //   this.setState({ displayBio: false });
   // }
-  toggle() {
+  toggleDisplayBio() {
     this.setState({ displayBio: !this.state.displayBio });
   }
 
@@ -34,11 +34,11 @@ class App extends Component {
         </ol>
         <p>I also enjoy Swimming, WaterPolo, Rock Climbing, and Traveling!</p>
 
-        <button onClick={this.toggle}>Read Less</button>
+        <button onClick={this.toggleDisplayBio}>Read Less</button>
       </div>
     ) : (
       <div>
-        <button onClick={this.toggle}>Read More</button>
+        <button onClick={this.toggleDisplayBio}>Read More</button>
       </div>
     );
 
