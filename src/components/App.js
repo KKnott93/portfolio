@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import Jokes from "./Jokes"
 import SocialProfiles from "./SocialMedia";
 import Projects from "./Projects";
 import profilePic from "../assets/profile.png";
 import Title from './Title'
+import Header from './Header';
 
 class App extends Component {
   state = { displayBio: false };
@@ -42,6 +42,7 @@ class App extends Component {
 
     return (
       <div>
+        <Header />
         <img
           src={profilePic}
           alt="profile-pic"
@@ -63,8 +64,7 @@ class App extends Component {
 
         <hr />
         <SocialProfiles />
-        <hr />
-        <Jokes />
+
       </div>
     );
   }
