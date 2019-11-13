@@ -2,8 +2,7 @@ import React, { Component } from "react";
 import SocialProfiles from "./SocialMedia";
 import Projects from "./Projects";
 import profilePic from "../assets/profile.png";
-import Title from './Title'
-import Header from './Header';
+import Title from './Title';
 
 class App extends Component {
   state = { displayBio: false };
@@ -42,7 +41,6 @@ class App extends Component {
 
     return (
       <div>
-        <Header />
         <img
           src={profilePic}
           alt="profile-pic"
