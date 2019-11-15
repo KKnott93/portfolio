@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import Header from './Header';
-
 
 const Joke = ({ joke: { setup, punchline } }) => (
     <p style={{ margin: 20 }}>{setup} <em>{punchline}</em> </p>
