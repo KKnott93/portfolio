@@ -18,12 +18,7 @@ class App extends Component {
     const bio = this.state.displayBio ? (
       <div>
         <p>I am currently living in the greater DFW metroplex in Texas</p>
-        <p>My favorite coding languages are</p>
-        <ol type="1">
-          <li>Python</li>
-          <li>Golang</li>
-          <li>Java</li>
-        </ol>
+        <p>My favorite coding languages are: Python, Golang, Java</p>
         <p>I also enjoy Swimming, WaterPolo, Rock Climbing, and Traveling!</p>
 
         <button onClick={this.toggleDisplayBio}>Read Less</button>
